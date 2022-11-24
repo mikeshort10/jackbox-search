@@ -367,7 +367,7 @@ export const games: Game[] = [
     title: "Poll Mine",
     box: 8,
     minPlayers: 2,
-    maxPlayers: 8,
+    maxPlayers: 10,
     tags: {
       teams: true,
     },
@@ -386,8 +386,8 @@ export const games: Game[] = [
   {
     title: "The Weapons Drawn",
     box: 8,
-    minPlayers: 2,
-    maxPlayers: 10,
+    minPlayers: 4,
+    maxPlayers: 8,
     tags: {
       deception: true,
     },
@@ -396,7 +396,7 @@ export const games: Game[] = [
   {
     title: "Wheel of Enormous Proportions",
     box: 8,
-    minPlayers: 4,
+    minPlayers: 2,
     maxPlayers: 8,
     tags: {
       trivia: true,
