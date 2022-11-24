@@ -6,6 +6,23 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  margin-top: 2rem;
+  width: 72rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+ul {
+  padding-left: 0rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -13,6 +30,13 @@ a {
 
 * {
   box-sizing: border-box;
+    --primary-color: aquamarine;
+    --secondary-color: #222;
+}
+
+h2 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 @media (prefers-color-scheme: dark) {
