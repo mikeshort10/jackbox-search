@@ -390,6 +390,7 @@ export const games: Game[] = [
     maxPlayers: 8,
     tags: {
       deception: true,
+      drawing: true,
     },
     hasAudience: true,
   },
