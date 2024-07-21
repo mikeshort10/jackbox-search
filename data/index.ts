@@ -1,10 +1,12 @@
 export type Game = {
   title: string;
-  box: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9;
+  box: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
   minPlayers: number;
   maxPlayers: number;
   tags?: Partial<Record<Tag, true>>;
   hasAudience: boolean;
+  minTypicalPlayTime?: number;
+  maxTypicalPlayTime?: number;
 };
 
 export const tags = {
@@ -14,6 +16,7 @@ export const tags = {
   writing: "Writing",
   teams: "Teams",
   deception: "Deception",
+  music: "Rhythm & Music"
 } as const;
 
 export type Tag = keyof typeof tags;
@@ -401,6 +404,128 @@ export const games: Game[] = [
     maxPlayers: 8,
     tags: {
       trivia: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Roomerang",
+    box: 9,
+    minPlayers: 4,
+    maxPlayers: 9,
+    tags: {
+      writing: true,
+    },
+    hasAudience: true,
+    minTypicalPlayTime: 25,
+    maxTypicalPlayTime: 35,
+  },
+  {
+    title: "Junktopia",
+    box: 9,
+    minPlayers: 3,
+    maxPlayers: 8,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 25,
+    tags: {
+      writing: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Nonsensory",
+    box: 9,
+    minPlayers: 3,
+    maxPlayers: 8,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 25,
+    tags: {
+      writing: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Fibbage 4",
+    box: 9,
+    minPlayers: 2,
+    maxPlayers: 8,
+    minTypicalPlayTime: 20,
+    maxTypicalPlayTime: 20,
+    tags: {
+      deception: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Quixort",
+    box: 9,
+    minPlayers: 1,
+    maxPlayers: 10,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 20,
+    tags: {
+      trivia: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Tee K.O. 2",
+    box: 10,
+    minPlayers: 3,
+    maxPlayers: 8,
+    minTypicalPlayTime: 20,
+    maxTypicalPlayTime: 20,
+    tags: {
+      drawing: true,
+      writing: true
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Timejinx",
+    box: 10,
+    minPlayers: 1,
+    maxPlayers: 8,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 20,
+    tags: {
+      trivia: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "FixyText",
+    box: 10,
+    minPlayers: 3,
+    maxPlayers: 8,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 20,
+    tags: {
+      teams: true,
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Dodo Re Mi",
+    box: 10,
+    minPlayers: 1,
+    maxPlayers: 9,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 25,
+    tags: {
+      trivia: true,
+      music: true
+    },
+    hasAudience: true,
+  },
+  {
+    title: "Hypnotorious",
+    box: 10,
+    minPlayers: 4,
+    maxPlayers: 8,
+    minTypicalPlayTime: 15,
+    maxTypicalPlayTime: 25,
+    tags: {
+      teams: true,
     },
     hasAudience: true,
   },
