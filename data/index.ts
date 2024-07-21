@@ -512,7 +512,6 @@ export const games: Game[] = [
     minTypicalPlayTime: 15,
     maxTypicalPlayTime: 25,
     tags: {
-      trivia: true,
       music: true
     },
     hasAudience: true,
