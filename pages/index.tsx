@@ -27,7 +27,7 @@ export default function Home() {
   );
 
   const [selectedPacks, setSelectedPacks] = useState(
-    Array(8)
+    Array(10)
       .fill(null)
       .map((_, i) => true)
   );
